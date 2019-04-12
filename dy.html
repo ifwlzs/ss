@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+		<title>影视资源导航</title>
+		<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+		<base target="_blank">
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="bookmark" href="img/favicon.ico"/>
+		</head>
+	<script type="text/javascript">
+	</script>
+	<style>
+		body {
+			background-color: #ffffcc;
+			cursor: url(img/1.cur),auto;
+			font-size: 20px;
+		}
+		a
+		{
+			text-decoration: none;
+			color: red;
+			font-weight: bold;
+			cursor: url(img/ice.ani),auto;
+		}
+	    a:hover{
+			text-decoration:underline;
+			color: #000;
+			font-weight: bolder;
+			font-size: 32px;
+		}
+				
+		.form-link {
+			color: green;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		
+		#logo {
+			height: 100px;
+			width: auto;
+			background-color:#FFFF44;
+		}
+		
+		#logo1 {
+			height: 100px;
+			width: auto;
+			//background-color: #000;
+			float: left;
+		}
+		#music {
+			
+			float: right;
+		}
+		#main
+		{
+			width: 90%;
+			height: 14150px;
+			margin: 0 auto;
+			background-color:#00FFFF;
+			filter:alpha(opacity=85); 
+			opacity:0.85; 
+		}
+		#copyright
+		{
+			height:150px;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			background-color: #FFFFCC;
+			font: 楷体;
+			float: left;
+		}
+		#top
+		{
+			font-size: 36px;
+			font-family: "黑体";
+			margin: 0 auto;
+			width: 80;
+		}
+		.nr
+		{
+			font-size: 30px;
+		}
+		.d_over{
+			height: 250px;
+			width: 45%;
+			border-radius: calc();
+			margin: 10px 30px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#EFEFEF;
+			} 
+		.d_out{
+			height: 250px;
+			width: 45%;
+			border-bottom-right-radius: 25px;
+			margin: 10px 30px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#FFFFFF;
+			box-shadow: 7px 7px 2px #242424;
+		}  
+		
+		
+		
+/*-----max-width:15000px-------------*/	
+@media(max-width:1500px){
+		
+		.d_over{
+			height: 300px;
+			width: 40%;
+			border-radius: calc();
+			margin: 10px 30px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#EFEFEF;
+			word-break: break-all;
+			} 
+		.d_out{
+			height: 300px;
+			width: 40%;
+			border-bottom-right-radius:30px;
+			margin-top: 10px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#FFFFFF;
+			box-shadow: 7px 7px 2px #242424;
+			word-break: break-all;
+		} 
+		#main
+		{
+			width: 90%;
+			height: 17600px;
+			margin: 0 auto;
+			background-color:#00FFFF;
+			filter:alpha(opacity=85); 
+			opacity:0.85; 
+		} 
+	}
+	
+	
+
+/*-----max-width:700px-------------*/
+@media(max-width:750px){
+		#music {
+			width: 100%;
+			float: right;
+		}
+		#logo {
+			height: 200px;
+			width: auto;
+			background-color:#FFFF44;
+		}
+		.d_over{
+			height: 300px;
+			width: 80%;
+			border-radius: calc();
+			margin: 10px 30px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#EFEFEF;
+			word-break: break-all;
+			} 
+		.d_out{
+			height: 300px;
+			width: 80%;
+			border-bottom-right-radius: 25px;
+			margin-top: 30px;
+			float: left;
+			text-align: center;
+			border:2px solid #000;
+			background-color:#FFFFFF;
+			box-shadow: 7px 7px 2px #242424;
+			word-break: break-all;
+		}  
+		#main
+		{
+			width: 90%;
+			height: 34500px;
+			margin: 0 auto;
+			background-color:#00FFFF;
+			filter:alpha(opacity=85); 
+			opacity:0.85; 
+		}
+	}
+	.about
+	{
+		font-size: 20px;
+		color: coral;
+	}
+	#ex
+	{
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: 30px;
+		font-size: 45px;
+		text-align: center;
+		height: 200px;
+		float: left;
+		line-height: 250px;
+		font-weight: bold;
+		color: blue;
+	}
+	</style>
+
+	<body>
+
+
+
+<script type="text/javascript" src="js/canvas-nest.min.js"></script>　
+
+
+		<div id="logo">
+			<img src="img/logo.png" width="1653" height="748" id="logo1" />
+			<iframe id="music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=50% height=86 src="http://music.163.com/outchain/player?type=2&id=480353&auto=0&height=66">
+   			</iframe>
+		</div>
+		<div id="main">
+			<p align="center" id="top">影视资源导航</p><hr color="gray"/><br />
+			<!--
+            	作者：93xo.ox39@gmail.com
+            	时间：2018-12-01
+            	描述：标题模版
+            	<h1 align="center"><font color="blue">  </font></h1>
+            -->
+            <!--
+            	作者：93xo.ox39@gmail.com
+            	时间：?018-12-01
+            	描述：网站模板
+            	
+            <a href="" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" >
+			 <hr color="#39cccc" />网址：
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+            -->
+			
+			<h1 align="center"><font color="blue">电视/字幕组</font></h1>
+			<a href="http://www.zimuku.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			字幕库<hr color="#39cccc" />网址：http://www.zimuku.cn/<hr color="#39CCCC"><p class="about">Tips：字幕下载网站</p>
+			</div></a>
+			
+			<a href="http://assrt.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			射手网<hr color="#39cccc" />网址：http://assrt.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+				
+            <a href="http://www.zimuzu.tv" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			YYeTs字幕组<hr color="#39cccc" />网址：http://www.zimuzu.tv
+			<hr color="#39CCCC"><p class="about">
+			Tips：人人影视字幕组</p>
+			</div></a>
+			
+			<a href="http://www.jlpcn.net" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			纪录片天地<hr color="#39cccc" />网址：http://www.jlpcn.net
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：</p>
+			</div></a>
+			
+			<a href="http://www.dyxia.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 全集网<hr color="#39cccc" />网址：http://www.dyxia.com/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：</p>
+			</div></a>
+			
+			<a href="http://ws.cqtui.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			美剧侦探 <hr color="#39cccc" />网址：http://ws.cqtui.com/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：开放注册中</p>
+			</div></a>
+			
+			<a href="http://www.kamigami.org/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			诸神字幕组<hr color="#39cccc" />网址：http://www.kamigami.org/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：动漫、日剧、纪录片</p>
+			</div></a>
+			
+			<a href="http://zhuixinfan.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			追番剧<hr color="#39cccc" />网址：http://zhuixinfan.com
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：日剧、日影</p>
+			</div></a>
+			
+			<a href="http://www.zzrbl.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			猪猪日剧<hr color="#39cccc" />网址：http://www.zzrbl.com/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：</p>
+			</div></a>
+			
+			<a href="http://www.zimuxia.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			FIX字幕组<hr color="#39cccc" />网址：http://www.zimuxia.cn/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：韩语、德语、日语、法语</p>
+			</div></a>
+			
+			<a href="http://www.jpsub.com/bbs/forum.php" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 日尚大学园<hr color="#39cccc" />网址：http://www.jpsub.com/bbs/
+			<hr color="#39CCCC"><p class="about">
+			 Tips：论坛 可能要注册</p>
+			</div></a>
+			
+			<a href="https://91mjw.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			91美剧网<hr color="#39cccc" />网址：https://91mjw.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：分类很清楚</p>
+			</div></a>
+			
+			<a href="http://www.meijutt.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" >
+			美剧天堂<hr color="#39cccc" />网址：http://www.meijutt.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://neets.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			NEETS<hr color="#39cccc" />网址：https://neets.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：美剧、日剧、韩剧、动漫、国产剧</p>
+			</div></a>
+			
+			<a href="https://www.y3600.co/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			热播网<hr color="#39cccc" />网址：https://www.y3600.co/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：分成韩剧版和泰剧版</p>
+			</div></a>
+			
+			<a href="http://www.hanju.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			韩剧网<hr color="#39cccc" />网址：http://www.hanju.cc/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：</p>
+			</div></a>
+			
+			<a href="https://www.hanjutv.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 韩剧TV<hr color="#39cccc" />网址：https://www.hanjutv.com/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips： 韩剧、泰剧、日剧、电影、综艺</p>
+			</div></a>
+			
+			<a href="http://www.hanmi520.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			韩迷字幕组<hr color="#39cccc" />网址：http://www.hanmi520.com
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：论坛</p>
+			</div></a>
+			
+			<a href="http://www.hjzlg.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			韩粉乐园<hr color="#39cccc" />网址：http://www.hjzlg.com/
+			<hr color="#39CCCC"><p class="about">
+			 	Tips：强烈推荐</p>
+			</div></a>
+			
+			<a href="http://www.hanfan.cc/hanju/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			韩饭碗<hr color="#39cccc" />网址：http://www.hanfan.cc/hanju/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+<!--***************************************************************************-->			
+			<div id="ex">电影</div>	
+			
+			<a href="http://www.banyungong.org/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			搬运工<hr color="#39cccc" />网址：http://www.byg521.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：资源范围广、相对来说非常全，搜索功能需要登陆才能用</p>
+			</div></a>
+						
+			<a href="https://www.dytt8.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影天堂<hr color="#39cccc" />网址：https://www.dytt8.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：广为人知的老牌</p>
+			</div></a>
+			
+			<a href="http://www.zhuihd.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			追高清<hr color="#39cccc" />网址：http://www.zhuihd.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.gaoqingkong.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			高清控联盟<hr color="#39cccc" />网址：http://www.gaoqingkong.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://gaoqing.la/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			中国高清网<hr color="#39cccc" />网址：http://gaoqing.la/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://aikhd.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 爱看高清影视<hr color="#39cccc" />网址：https://aikhd.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+						
+			<a href="http://www.cnscg.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			圣城家园<hr color="#39cccc" />网址：http://www.cnscg.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.ygdy8.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			阳光电影<hr color="#39cccc" />网址：http://www.ygdy8.com
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.piaohua.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			飘花电影<hr color="#39cccc" />网址：https://www.piaohua.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.verycd.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电驴大全<hr color="#39cccc" />网址：http://www.verycd.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.chdchd.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			高清论坛<hr color="#39cccc" />网址：http://www.chdchd.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+
+			<a href="http://www.ed2000.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			ED2000资源共享<hr color="#39cccc" />网址：http://www.ed2000.com
+			<hr color="#39CCCC"><p class="about">
+			Tips：音乐、游戏、动漫、图书、综艺、软件、资料</p>
+			</div></a>
+			
+			<a href="http://www.qyxdh.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			秦一鑫电影<hr color="#39cccc" />网址：http://www.qyxdh.cn/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+	<!--
+    	作者：93xo.ox39@gmail.com
+    	时间：2018-12-01
+    	描述：优质区
+    -->		
+    		
+			
+			<a href="https://www.52tv.org/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			吾爱影院<hr color="#39cccc" />网址：https://www.52tv.org/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.04tv.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			零时影院<hr color="#39cccc" />网址：https://www.04tv.cn/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.xlpu.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			迅雷铺<hr color="#39cccc" />网址：http://www.xlpu.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.xlp2.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			迅雷铺电影网<hr color="#39cccc" />网址：http://www.xlp2.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.6070k.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 一 一影院<hr color="#39cccc" />网址：www.6070k.com
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.btpian.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			BT天堂<hr color="#39cccc" />网址：https://www.btpian.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.38dy.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			38dy电影<hr color="#39cccc" />网址：http://www.38dy.cn/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.poxiao.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			破晓电影<hr color="#39cccc" />网址：https://www.poxiao.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.tl95.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			TL95<hr color="#39cccc" />网址：http://www.tl95.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			
+			<a href="http://www.007ts.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 007影视<hr color="#39cccc" />网址：http://www.007ts.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://yskk.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			影视看看<hr color="#39cccc" />网址：http://yskk.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.bd-film.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			BD影视<hr color="#39cccc" />网址：https://www.bd-film.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.rs05.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 人生05电影网<hr color="#39cccc" />网址：http://www.rs05.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.xunyingwang.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 迅影网<hr color="#39cccc" />网址：http://www.xunyingwang.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.0352tv.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			魏都影视<hr color="#39cccc" />网址：http://www.0352tv.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.66ys.tv/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			66影视<hr color="#39cccc" />网址：http://www.66ys.tv/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.shinybbs.info/forum.php" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			深影论坛<hr color="#39cccc" />网址：http://www.shinybbs.info/forum.php
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.dygang.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影港<hr color="#39cccc" />网址：http://www.dygang.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.mcyt.cn/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			扬天影视<hr color="#39cccc" />网址：https://www.mcyt.cn/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.languang.co/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			蓝光网<hr color="#39cccc" />网址：http://www.languang.co/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.btshoufa.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			BT首发论坛<hr color="#39cccc" />网址：http://www.btshoufa.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://v.sunbook.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 暖光影视<hr color="#39cccc" />网址：http://v.sunbook.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：画质一般适合手机</p>
+			</div></a>
+			
+			<a href="http://17kyun.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			17kyun<hr color="#39cccc" />网址：http://17kyun.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://tv.3ewl.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			清风影院<hr color="#39cccc" />网址：http://tv.3ewl.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://movie.and110.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			安德影院<hr color="#39cccc" />网址：http://movie.and110.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.aixiaoju.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			爱笑聚<hr color="#39cccc" />网址：http://www.aixiaoju.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://mycydia.vip/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			布斯影视<hr color="#39cccc" />网址：http://mycydia.vip/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.dyrizhi.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			影视日志<hr color="#39cccc" />网址：http://www.dyrizhi.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.diaomie.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			片哈网<hr color="#39cccc" />网址：http://www.diaomie.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：画质一般</p>
+			</div></a>
+			
+			<a href="http://www.87kp.tv/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			87电影院<hr color="#39cccc" />网址：http://www.87kp.tv/
+			<hr color="#39CCCC"><p class="about">
+			Tips：画质不好适合手机</p>
+			</div></a>
+			
+			<a href="http://www.hb720.tv/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 720影视大全<hr color="#39cccc" />网址：http://www.hb720.tv/
+			<hr color="#39CCCC"><p class="about">
+			Tips：画质不好适合手机</p>
+			</div></a>
+			
+			<a href="http://www.66vip.me/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			66vip<hr color="#39cccc" />网址：http://www.66vip.me/
+			<hr color="#39CCCC"><p class="about">
+			Tips：部分线路高清</p>
+			</div></a>
+			
+			<a href="http://www.vzmz.com" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影天堂<hr color="#39cccc" />网址：www.vzmz.com
+			<hr color="#39CCCC"><p class="about">
+			Tips：不是广为人知的那个</p>
+			</div></a>
+			
+			<a href="http://www.xixizhan.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			西西电影论坛<hr color="#39cccc" />网址：http://www.xixizhan.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.hdbee.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影蜜蜂<hr color="#39cccc" />网址：http://www.hdbee.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href"https://moviejie.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影街<hr color="#39cccc" />网址：https://moviejie.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.6vdy.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			6V电影<hr color="#39cccc" />网址：http://www.6vdy.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://dianying.fm/search/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影FM<hr color="#39cccc" />网址：http://dianying.fm/search/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://ziyuanpian.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			资源片<hr color="#39cccc" />网址：http://ziyuanpian.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://xlyy100.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			降龙影院<hr color="#39cccc" />网址：http://xlyy100.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.youzhidy.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			优质电影网<hr color="#39cccc" />网址：http://www.youzhidy.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://movie002.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影小二网<hr color="#39cccc" />网址：http://movie002.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.yy111111.co/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			光棍影院<hr color="#39cccc" />网址：http://www.yy111111.co/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.kb20.cc/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			酷播网<hr color="#39cccc" />网址：http://www.kb20.cc/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.youzhidy.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			优质电影网<hr color="#39cccc" />网址：http://www.youzhidy.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.moviewg.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			电影王国<hr color="#39cccc" />网址：http://www.moviewg.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://bbs.hd62.org/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			老鸟家园<hr color="#39cccc" />网址：http://bbs.hd62.org/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.xingk.cc/forum.php" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			星空家园<hr color="#39cccc" />网址：http://www.xingk.cc/forum.php
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.80s.tw/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			80s电影网<hr color="#39cccc" />网址：http://www.80s.tw/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.hao6v.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			6V电影网<hr color="#39cccc" />网址：http://www.hao6v.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.q2002.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			Q2电影<hr color="#39cccc" />网址：http://www.q2002.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.8vdy.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			8V电影<hr color="#39cccc" />网址：http://www.8vdy.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.zaizai8.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			仔仔网<hr color="#39cccc" />网址：http://www.zaizai8.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+				
+			<a href="http://www.xiaopian.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			小片网<hr color="#39cccc" />网址：http://www.xiaopian.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.x2y4.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			小二影视<hr color="#39cccc" />网址：http://www.x2y4.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.sgn8.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			87福利电影网<hr color="#39cccc" />网址：http://www.sgn8.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.dytt789.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			LOL电影天堂<hr color="#39cccc" />网址：https://www.dytt789.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.mp4ba.net/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			Mp4Ba<hr color="#39cccc" />网址：http://www.mp4ba.net/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.beiwo888.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			被窝电影网<hr color="#39cccc" />网址：http://www.beiwo888.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.80dyy.vip/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			80电影天堂<hr color="#39cccc" />网址：https://www.80dyy.vip/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.2w2w.tv/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			OK资源网<hr color="#39cccc" />网址：http://www.2w2w.tv/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="https://www.bdhd8.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			八点影院<hr color="#39cccc" />网址：https://www.bdhd8.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://yiybb.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			CK免费电影网<hr color="#39cccc" />网址：http://yiybb.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.qiqi321.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			琪琪看片<hr color="#39cccc" />网址：http://www.qiqi321.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="http://www.liliyy99.com/" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			莉莉影院<hr color="#39cccc" />网址：http://www.liliyy99.com/
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			
+			
+			<!--
+			
+			
+			<a href="" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 <hr color="#39cccc" />网址：
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			
+			<a href="" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			 <hr color="#39cccc" />网址：
+			<hr color="#39CCCC"><p class="about">
+			Tips：</p>
+			</div></a>
+			-->
+			<a href="love.html" class="nr">
+            <div class="d_out" onmouseover="this.className='d_over'"  onmouseout="this.className='d_out'" ><br />
+			最后更新时间<hr color="#39cccc" />2018-12-01
+			<hr color="#39CCCC">23:03</div></a>
+			</div>
+		</div>
+		<div id="copyright">© 2018-2019
+		<a href="" class="form-link" >影视导航 </a>BETA 0.01 All Right Reserved.
+		<a  href="love.html" class="form-link">联系我们</a> OR
+		<a  href="love.html" class="form-link">
+			捐助本站</a> 本站数据均由WLZS添加，所有资源全部收集于互联网，如有侵权，请联系我们。
+		</div>
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="93xo.ox39@gmail.com" />
+		<meta name="description" content="一个搜集有用网址的小站" />
+		<meta name="keywords" content="资源,导航,工具,整理,聚合,合集,书籍,音乐,电影,在线工具,学习,教程,教材,搜索" />
+		<meta name="robots" content="none" />
+		<title>全网资源搜索导航</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<!-- Styles -->
+		<link href="css/style.css" rel="stylesheet">
+		<!--
+    	作者：93xo.ox39@gmail.com
+    	时间：2018-12-27
+    	描述：缩略图
+    	-->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="bookmark" href="img/favicon.ico" />
+		<!-- Fonts -->
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_989386_njm5z37gt9.css">
+		<link href='http://fonts.lug.ustc.edu.cn/css?family=Raleway:400,600,500,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:400,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
+		<style>
+			/*.main {
+				background: -moz-linear-gradient(top, #93EDC7 0%, #1CD8D2 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #93EDC7), color-stop(100%, #1CD8D2));
+				background: -webkit-linear-gradient(top, #93EDC7 0%, #1CD8D2 100%);
+				background: -o-linear-gradient(top, #93EDC7 0%, #1CD8D2 100%);
+				background: -ms-linear-gradient(top, #93EDC7 0%, #1CD8D2 100%);
+				background: linear-gradient(to bottom, #93EDC7 0%, #1CD8D2 100%);
+			}
+			*/
+			
+			.mytitle {
+				margin: 15px auto;
+			}
+			
+			iframe {
+				margin: 10px auto;
+			}
+			
+			@media only screen and (max-width:420px) {
+				#q {
+					width: 300px;
+					font-size: 25px;
+					border-radius: 15px;
+					padding-left: 15px;
+				}
+			}
+			
+			@media only screen and (max-width: 800px) {
+				#q {
+					width: 300;
+					font-size: 26px;
+					border-radius: 30px;
+					padding-left: 20px;
+				}
+			}
+			
+			@media only screen and (min-width: 800px) {
+				#q {
+					width: 750px;
+					font-size: 35px;
+					border-radius: 30px; 
+					padding-left: 20px;
+				}
+			}
+			
+			@media only screen and (min-width: 1000px) {
+				#q {
+					width: 900px;
+					font-size: 35px;
+					border-radius: 30px;
+					 padding-left: 20px;
+				}
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="canvas">
+				<div id="nav">
+					<img src="img/logo.png" width="100%">
+					<ul id="toggle">
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-zhuye"></span>
+								<a href="wzb.html">首页</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-wangpan"></span>
+								<a href="pan.html">网盘</a>
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-weibiaoti2zhuanhuan"></span>
+								<a href="#">影视类</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="film.html#t1">字幕组/电视剧</a>
+								</li>
+								<li>
+									<a href="film.html#t2">电影</a>
+								</li>
+								<li>
+									<a href="dy.html">旧版影视导航</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-magnet"></span>
+								<a href="bt.html">BT种子/磁链</a>
+							</div>
+						</li>
+						<li>
+							<div class=>
+								<span class="menu-icons iconfont icon-gongju"></span>
+								<a href="#">工具/导航类</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="tool.html#t1">识图工具</a>
+								</li>
+								<li>
+									<a href="tool.html#t2">导航 & 工具</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-ruanjian"></span>
+								<a href="#">软件相关</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="soft.html#t1">软件查找</a>
+								</li>
+								<li>
+									<a href="soft.html#t2">Windows指南</a>
+								</li>
+								<li>
+									<a href="soft.html#t3">优质公众号推荐</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-transgender"></span>
+								<a href="#">二次元</a>
+								<span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="acg.html#t1">各大站点(A-Z站)</a>
+								</li>
+								<li>
+									<a href="acg.html#t2">资讯类站点</a>
+								</li>
+								<li>
+									<a href="acg.html#t3">游戏</a>
+								</li>
+								<li>
+									<a href="acg.html#t4">动画 & 漫画</a>
+								</li>
+								<li>
+									<a href="acg.html#t5">图库</a>
+								</li>
+								<li>
+									<a href="acg.html#t6">综合论坛</a>
+								</li>
+								<li>
+									<a href="acg.html#t7">V家 × U家</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-xueli"></span>
+								<a href="#">学习资源</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="study.html#t1">公开课</a>
+								</li>
+								<li>
+									<a href="study.html#t2">专业相关</a>
+								</li>
+								<li>
+									<a href="study.html#t3">ACM竞赛</a>
+								</li>
+
+							</ul>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-book"></span>
+								<a href="#">书籍</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="book.html#t1">小说/电子书/pdf</a>
+								</li>
+								<li>
+									<a href="book.html#t2">中外书籍</a>
+								</li>
+
+								<li>
+									<a href="book.html#t3">有声读物</a>
+								</li>
+								<li>
+									<a href="book.html#t4">旧书交易</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<div>
+								<span class="menu-icons  iconfont icon-music "></span>
+								<a href="#">音乐相关</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="music.html#t1">音乐下载</a>
+								</li>
+								<li>
+									<a href="music.html#t2">MIDI下载</a>
+								</li>
+								<li>
+									<a href="music.html#t3">音效下载</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-qita"></span>
+								<a href="#">其他</a><span class="the-btn fa fa-plus"></span>
+							</div>
+							<ul>
+								<li>
+									<a href="other.html#t1">安卓刷机包（ROM）</a>
+								</li>
+								<li>
+									<a href="other.html#t2">专业影评</a>
+								</li>
+								<li>
+									<a href="#">&nbsp;</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon--wordpress"></span>
+								<!---->
+								<a href="//acgcl.org">ACG畅聊吧</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="menu-icons iconfont icon-telegram"></span>
+								<!---->
+								<a href="love.html">关于本站</a>
+							</div>
+						</li>
+						<li>
+							<span class="menu-icons"></span>
+							<div class="toggle-nav" style="">
+								<a href="#">Break&nbsp;&nbsp;>></a>
+							</div>
+						</li>
+						<li>
+							<div style="text-align: center;">
+								<a href="#" style="padding-left: 0;margin: 0 auto;color: #ffc;">最终更新于：2019-04-10</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="toggle-nav" id="bars"><i class="fa fa-chevron-circle-left   "></i> <i class="fa fa-bars"></i>&nbsp;<span>首页</span></a>
+				<div class="main" style="text-indent: 0em;">
+					<div class="links panel">
+						<div class="panel-body">
+							<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=85px src="http://music.163.com/outchain/player?type=2&id=496619840&auto=0&height=66"></iframe>
+							<!--搜索引擎begin -->
+							<script language=javascript>
+								function gowhere1(formname) {
+									var url;
+									if(formname.myselect.value == "0") {
+										$("#q").attr("name", "wd");
+										url = "http://www.baidu.com/s?wd";
+										document.search_form1.value = "wd";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "1") {
+										$("#q").attr("name", "q");
+										url = "https://cn.bing.com/search?q=";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "2") {
+										$("#q").attr("name", "q");
+										url = "https://quark.sm.cn/s?q=";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "3") {
+										$("#q").attr("name", "q");
+										url = "https://searx.me?q";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "4") {
+										$("#q").attr("name", "text");
+										url = "https://yandex.com/search/?q";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "5") {
+										$("#q").attr("name", "q");
+										url = "https://www.google.com.hk/search?q";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "6") {
+										$("#q").attr("name", "text");
+										url = "https://translate.google.cn/#view=home&op=translate&sl=en&tl=zh-CN&q";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									formname.action = url;
+									return true;
+								}
+							</script>
+
+							<form name="search_form1" target="_blank" onsubmit="return gowhere1(this)" style="vertical-align: middle; padding-top:  15px;border-radius: 35px;border: 1px solid #ccc;">
+								<table align="center" width="100%" height="110px" cellpadding="0" cellspacing="0" style="font-family:'宋体'">
+									<tr>
+										<td>
+											<table width="100%" height="100%" align="center" style="vertical-align: middle;">
+												<tr align="center">
+													<td valign="middle" width="100%" align="center">
+														<input checked="" name="myselect" onclick="javascript:this.form.value=0;" type="radio" value="0">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">百度</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=1;" type="radio" value="1">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=2;" type="radio" value="2">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=3;" type="radio" value="3">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">SearX</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=4;" type="radio" value="4">
+														<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
+														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
+														<table align="center" width="100%">
+															<tbody>
+																<tr>
+																	<td align="center">
+																		<font style="font-SIZE: 12px">
+																			<input id="q" name="q" type="text" placeholder="请输入要查找的关键词" >
+																		</font>
+																		<input type="submit" value="GO" style="font-size:35px;background-color: rgba(255,255,255,.6); border-radius: 30px;">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</form>
+							<!--搜索引擎end   -->
+
+							<a name="t1">
+								<div class="mytitle">【搜索资源注意事项】</div>
+							</a>
+							<dl class="row">
+								<p align="center">搜索资源的道理都一样，推荐搜索资源的顺序为：<span class="bgyfr">网盘搜索引擎</span> →
+									<span class="bgyfr">BT磁链搜索网站</span> → <span class="bgyfr">
+										各相关网站搜索</span>。 下面用搜索电影资源举例
+								</p><br />
+								<ol>
+									<li>有些片子不一定搜一个片名就能搜出来， 国内的网站主要搜索中文名， 外网主要搜索外文名。 而几乎所有的片名， 都可以在对应的豆瓣条目简介里面找到 ， 当然IMDB条目也有。国内的网站当然比较简单， 比如《血色将至》这部片，你可以搜“
+										<span class="red">血色将至</span>”、“
+										<span class="red">血色黑金</span>”、“
+										<span class="red">There Will Be Blood</span>”
+									</li>
+									<li>国外的网站， 很多非英语片， 除了中文译名之外， 都会有两个片名， 举个例子： 《精疲力尽》这部片， 你可以搜英文名“
+										<span class="red">Breathless</span>”、 法文名“
+										<span class="red">à bout de souffle</span>”。 《七武士》这部片，你可以搜中文名 “
+										<span class="red">七武士</span>”， 日文名“
+										<span class="red">七人の侍</span>”， 英文名“
+										<span class="red">SevenSamurai</span>”， 最好用的方法是搜索日语发音 (罗马音) “
+										<span class="red">Shichinin no samurai</span>”， 最后一种方法是在外网搜索日语片的首选。
+									</li>
+									<li>有些名字相同的片子， 可以在后面加上年份， 方便区分， 比如希区柯克的《惊魂记》 ， 可以搜“psycho <span class="red">1960</span>。 想看高清的可以 片名+
+										<span class="bgyfr">720p</span> /
+										<span class="bgyfr">1080p</span> / <span class="bgyfr">bluray</span>等后缀。
+									</li>
+									<li>搜电影原声， 可搜索片名+
+										<span class="bgyfr">soundtrack</span> /
+										<span class="bgyfr">OST</span>。</li>
+									<li>在谷歌上搜索某个导演的合集， 可以加上collection这个后缀， 比如搜伍迪艾伦的， “Woody Allen
+										<span class="red">collection</span>”。</li>
+									<li>搜冷门片，可以用刚刚提到的方法，搜索：片名+
+										<span class="bgyfr">download</span> /
+										<span class="bgyfr">torrent</span> /
+										<span class="bgyfr">magnet</span> /
+										<span class="bgyfr">ed2k</i></li>
+								</ol>
+							</dl>
+							<a name="t1">
+								<div class="mytitle">【常见资源分享方法】</div>
+							</a>
+							<dl class="row">
+								<ol>
+									<li>百度云
+									<dl>
+										 <dt></dt>
+											<dt>(1)直接链接法：例：
+												https://pan.baidu.com/
+												s/1BQfRoz</dt>
+										<dt>(2)个别替代法：例：
+											<span class="red">baidu</span>被替代为<span class="red">百度</span></dt>
+										<dt>(3)间隔插入法: 例：
+														htt<span class="red">●</span>p://pa<span class="red">●</span>n.ba<span class="red">●</span>idu<span class="red">●</span>.c<span class="red">●</span>om
+														去掉<span class="red">●</span>即可</dt>
+										<dd>(4)去掉经典开头，加头即可:
+											<span class=red>http//pan.baidu.com/</span>或者
+											<span class=red>http://pan.baidu.com/s/</span>
+										</dd>
+							</dl>
+							</li>
+							<li>种子</li>
+							<dl>
+								<dt>(1)直接法：
+												<span class="red">torrent</span>结尾的文件</dt>
+								<dt>2)图种法：将图的扩展名
+												(后缀，例如JPG，PNG，BMP等)
+												改为压缩包格式(例如rar，zip，7z)
+										然后解压获得相关内容
+										(种子或者txt文本文件，
+										文本中可能记载着Ⅰ、Ⅲ、Ⅳ、Ⅴ、Ⅵ的加密方法)</dt>
+
+							</dl>
+							<li>磁力链接
+								<dl><dt>(1)直接磁链法→例
+												magnet:?xt=urn:btih:88A
+												AAE4012346a561E1
+										</dt>
+									<dt>(2)去掉磁链头→直接加 <span class="red">
+													magnet:?xt=urn:btih:</span></dt>
+									<dt>(3)加密磁链法(特征:
+													比一般磁链短且出现F个以后的字母)例
+										magnet:?xt=urn:btih:
+										dew1w6sds4
+										</dt></dl>
+							</li>
+							<li>摩斯电码法(可以用在线翻译网站进行翻译)。 例如：.--.-.--...-
+							</li>
+							<li>二维码式→直接扫码即可</li>
+							<li>佛经书法:一般为“佛曰:”加一大堆看不懂的文字→ 可在与佛论禅网进行翻译 （类似的方法即利用加密软件进行字符加密）
+							</li>
+							<li>易经法:将链接进行适当的转换， 再利用易经的图进行加密
+							</li>
+							<br />
+							</ol>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="no">
+				© 2018-2019&nbsp;本站数据均由WLZS添加，所有资源全部收集于互联网，如有侵权，请联系我们。
+			</div>
+		</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="js/jquery.min.js "></script>
+		<script src="js/custom.js "></script>
+
+</html>
+
+<!--
+<div class="links panel">
+	<a name=""><div class="mytitle">d</div></a>
+	<div class="panel-body">
+		<dl class="row">
+			<dd class="col-sm-3 col-md-2 col-xs-4">
+				<a href="#" target="_blank">
+					<i class="link-logo"></i>
+					<span class="link-title">&nbsp;</span>
+					<span class="link-info">暂无评价</span>
+				</a>
+			</dd>
+		</dl>
+	</div>
+</div>
+-->
