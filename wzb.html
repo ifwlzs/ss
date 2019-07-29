@@ -45,39 +45,87 @@
 				margin: 10px auto;
 			}
 			
-			@media only screen and (max-width:420px) {
+			.seachTable {
+				vertical-align: middle;
+				text-align: center;
+				margin: 0 auto;
+			}
+			
+			@media only screen and (min-width: 0px) and (max-width: 400px) {
 				#q {
 					width: 300px;
 					font-size: 25px;
 					border-radius: 15px;
 					padding-left: 15px;
 				}
+				.seachDiv {
+					float: left;
+					width: 100%;
+				}
 			}
 			
-			@media only screen and (max-width: 800px) {
+			@media only screen and (min-width: 400px) and (max-width: 500px) {
 				#q {
-					width: 300;
+					width: 90%;
 					font-size: 26px;
 					border-radius: 30px;
 					padding-left: 20px;
 				}
-			}
-			
-			@media only screen and (min-width: 800px) {
-				#q {
-					width: 750px;
-					font-size: 35px;
-					border-radius: 30px; 
-					padding-left: 20px;
+				.seachDiv {
+					float: left;
+					width: 50%;
 				}
 			}
 			
-			@media only screen and (min-width: 1000px) {
+			@media only screen and (min-width: 500px) and (max-width: 700px) {
 				#q {
-					width: 900px;
+					width: 90%;
+					font-size: 26px;
+					border-radius: 30px;
+					padding-left: 20px;
+				}
+				.seachDiv {
+					float: left;
+					width: 33%;
+				}
+			}
+			
+			@media only screen and (min-width: 700px) and (max-width: 800px) {
+				#q {
+					width: 50%;
+					font-size: 26px;
+					border-radius: 30px;
+					padding-left: 20px;
+				}
+				.seachDiv {
+					float: left;
+					width: 33%;
+				}
+			}
+			
+			@media only screen and (min-width: 800px) and (max-width: 1250px) {
+				#q {
+					width: 60%;
 					font-size: 35px;
 					border-radius: 30px;
-					 padding-left: 20px;
+					padding-left: 20px;
+				}
+				.seachDiv {
+					float: left;
+					width: 25%;
+				}
+			}
+			
+			@media only screen and (min-width: 1250px) {
+				#q {
+					width: 70%;
+					font-size: 35px;
+					border-radius: 30px;
+					padding-left: 20px;
+				}
+				.seachDiv {
+					float: left;
+					width: 12%;
 				}
 			}
 		</style>
@@ -289,7 +337,7 @@
 						</li>
 						<li>
 							<div style="text-align: center;">
-								<a href="temp.html#t1" style="padding-left: 0;margin: 0 auto;color: #ffc;">最终更新于：2019-07-26</a>
+								<a href="temp.html#t1" style="padding-left: 0;margin: 0 auto;color: #ffc;">最终更新于：2019-07-29</a>
 							</div>
 						</li>
 					</ul>
@@ -298,7 +346,7 @@
 				<div class="main" style="text-indent: 0em;">
 					<div class="links panel">
 						<div class="panel-body">
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=85px src="https://music.163.com/outchain/player?type=2&id=458231455&auto=0&height=66"></iframe>								
+							<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=85px src="https://music.163.com/outchain/player?type=2&id=458231455&auto=0&height=66"></iframe>
 							</iframe>
 							<!--搜索引擎begin -->
 							<script language=javascript>
@@ -349,6 +397,7 @@
 									formname.action = url;
 									return true;
 								}
+								}
 							</script>
 
 							<form name="search_form1" target="_blank" onsubmit="return gowhere1(this)" style="vertical-align: middle; padding-top:  15px;border-radius: 35px;border: 1px solid #ccc;">
@@ -358,28 +407,43 @@
 											<table width="100%" height="100%" align="center" style="vertical-align: middle;">
 												<tr align="center">
 													<td valign="middle" width="100%" align="center">
-														<input checked="" name="myselect" onclick="javascript:this.form.value=0;" type="radio" value="0">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">百度</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=1;" type="radio" value="1">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=2;" type="radio" value="2">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=3;" type="radio" value="3">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">SearX</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=4;" type="radio" value="4">
-														<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
-														<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
-														<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
+														<div class="seachDiv">
+															<input checked="" name="myselect" onclick="javascript:this.form.value=0;" type="radio" value="0">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">百度</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=1;" type="radio" value="1">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=2;" type="radio" value="2">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=3;" type="radio" value="3">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">SearX</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=4;" type="radio" value="4">
+															<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
+														</div>
 														<table align="center" width="100%">
 															<tbody>
 																<tr>
 																	<td align="center">
 																		<font style="font-SIZE: 12px">
-																			<input id="q" name="q" type="text" placeholder="请输入要查找的关键词" >
+																			<input id="q" name="q" type="text" placeholder="请输入要查找的关键词">
 																		</font>
 																		<input type="submit" value="GO" style="font-size:35px;background-color: rgba(255,255,255,.6); border-radius: 30px;">
+																		<input type="button" id="btn" value="搜索本站" style="font-size:35px;background-color: rgba(255,255,255,.7); border-radius: 30px;">
 																	</td>
 																</tr>
 															</tbody>
@@ -392,6 +456,42 @@
 								</table>
 							</form>
 							<!--搜索引擎end   -->
+							<!--本站查询begin-->
+							<script type="text/javascript">
+								$(function() {
+									$("#btn").click(function() {
+										var key = $("#q").val();
+										console.log(key);
+										var a = $.getJSON("json/ss.json", function(data) {
+											var $jsontip = $("#jsonTip");
+											var strHtml =
+												"<a name=\"t0\"><div class=\"mytitle\">【搜索结果】</div></a>" +
+												"<table class\"seachTable\" align=\"center\" width=\"100%\">" +
+												"<tr height=50><th>网站名称及链接</th>" +
+												"<th>网站简介及所在页面</th></tr>";
+											$jsontip.empty();
+											$.each(data, function(infoIndex, info) {
+												if(info["name"].toString().match(".?" + key + ".?") ||
+													info["url"].toString().match(".?" + key + ".?") ||
+													info["info"].toString().match(".?" + key + ".?")
+												) {
+													strHtml += "<tr align=\"center\"  height=\"60px;\" \"><td><a href=\"" +
+														info["url"] + "\" target=\"_blank\">" + info["name"] + "</a></td>"
+													strHtml += "<td>" + info["info"] + "&nbsp;<a href=\"" + info["page"] + "\" target=\"_blank\">" +
+														info["page"].substr(0, info["page"].length - 5).substr(19) +
+														"</a></td></tr>"
+												}
+											});
+											strHtml += "</table>";
+											$jsontip.html(strHtml);
+										})
+									})
+								})
+							</script>
+
+							<div id="jsonTip">
+							</div>
+							<!--本站查询end-->
 
 							<a name="t1">
 								<div class="mytitle">【搜索资源注意事项】</div>
