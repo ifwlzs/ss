@@ -96,7 +96,7 @@
 			
 			@media only screen and (min-width: 700px) and (max-width: 800px) {
 				#q {
-					width: 50%;
+					width: 90%;
 					font-size: 26px;
 					border-radius: 30px;
 					padding-left: 20px;
@@ -109,7 +109,7 @@
 			
 			@media only screen and (min-width: 800px) and (max-width: 1250px) {
 				#q {
-					width: 60%;
+					width: 90%;
 					font-size: 35px;
 					border-radius: 30px;
 					padding-left: 20px;
@@ -122,7 +122,7 @@
 			
 			@media only screen and (min-width: 1250px) {
 				#q {
-					width: 70%;
+					width: 60%;
 					font-size: 35px;
 					border-radius: 30px;
 					padding-left: 20px;
@@ -376,23 +376,29 @@
 									}
 									if(formname.myselect.value == "3") {
 										$("#q").attr("name", "q");
-										url = "https://searx.me?q";
+										url = "https://searx.be/?q";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
 									if(formname.myselect.value == "4") {
+										$("#q").attr("name", "q");
+										url = "https://www.so.com/s?ie=utf-8&fr=so.com&src=home_so.com&q";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "5") {
 										$("#q").attr("name", "text");
 										url = "https://yandex.com/search/?q";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
-									if(formname.myselect.value == "5") {
+									if(formname.myselect.value == "6") {
 										$("#q").attr("name", "q");
 										url = "https://www.google.com.hk/search?q";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
-									if(formname.myselect.value == "6") {
+									if(formname.myselect.value == "7") {
 										$("#q").attr("name", "text");
 										url = "https://translate.google.cn/#view=home&op=translate&sl=en&tl=zh-CN&q";
 										document.search_form1.value = "q";
@@ -428,14 +434,18 @@
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=4;" type="radio" value="4">
-															<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">360</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
-															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+															<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=7;" type="radio" value="7">
 															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
 														</div>
 														<table align="center" width="100%">
@@ -445,9 +455,8 @@
 																		<font style="font-SIZE:12px">
 																			<input id="q" name="q" type="text" placeholder="请输入要查找的关键词">
 																		</font>
-																		<input type="button" id="btn" value="站内搜索" style="font-size:35px;font-weight:bold;background-color: rgba(255,255,255,.7); border-radius: 30px;">
-																		<input type="submit" value="GO" style="font-size:35px;background-color: rgba(255,255,255,.6); border-radius: 30px;">																	</td>
-																</tr>
+																		<input type="button" id="btn" value="站内搜索" style="font-size:35px;color:hotpink;background-color: rgba(255,255,255,.7); border-radius: 30px;">
+																		<input type="submit" value="引擎搜索" style="font-size:35px;color:hotpink;background-color: rgba(255,255,255,.6); border-radius: 30px;">																	</tr>
 															</tbody>
 														</table>
 													</td>
