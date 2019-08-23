@@ -5173,13 +5173,6 @@
     "page": "https://ss.wlzs.cf/study.html"
   },
   {
-    "url": "#",
-    "name": "Bzhan",
-    "info": "暂无评价",
-    "title": "专业相关",
-    "page": "https://ss.wlzs.cf/study.html"
-  },
-  {
     "url": "http://www.1nami.com/",
     "name": "1纳米学习导航",
     "info": "暂无评价",
@@ -5621,6 +5614,13 @@
     "page": "https://ss.wlzs.cf/tool.html"
   },
   {
+    "url": "https://baidu.wlzs.ml/",
+    "name": "帮你百度一下",
+    "info": "暂无评价",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
     "url": "https://www.geogebra.org/",
     "name": "GeoGebra 数学应用",
     "info": "暂无评价",
@@ -5638,6 +5638,13 @@
     "url": "https://tool.lu/",
     "name": "程序员工具箱",
     "info": "暂无评价",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
+    "url": "https://www.zitijia.com/",
+    "name": "字体家",
+    "info": "免费字体下载",
     "title": "导航 & 实用工具",
     "page": "https://ss.wlzs.cf/tool.html"
   },
@@ -5679,7 +5686,7 @@
   {
     "url": "https://www.cn-ki.net/",
     "name": "iData",
-    "info": "下载知网上的文章",
+    "info": "下载知网上的文章，论文下载",
     "title": "导航 & 实用工具",
     "page": "https://ss.wlzs.cf/tool.html"
   },
@@ -5763,6 +5770,34 @@
   {
     "url": "http://search.chongbuluo.com/",
     "name": "虫部落快搜",
+    "info": "暂无评价",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
+    "url": "https://www.remove.bg",
+    "name": "RemoveBg",
+    "info": "在线抠图",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
+    "url": "http://web.airdroid.com/",
+    "name": "AirDroid",
+    "info": "录屏投屏",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
+    "url": "https://tophub.today",
+    "name": "今日热榜",
+    "info": "各大网站热榜",
+    "title": "导航 & 实用工具",
+    "page": "https://ss.wlzs.cf/tool.html"
+  },
+  {
+    "url": "http://www.addog.vip",
+    "name": "广告人导航",
     "info": "暂无评价",
     "title": "导航 & 实用工具",
     "page": "https://ss.wlzs.cf/tool.html"
