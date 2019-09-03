@@ -875,6 +875,13 @@
     "page": "https://ss.wlzs.cf/acg.html"
   },
   {
+    "url": "http://game.ifwlzs.tk/",
+    "name": "PC Stand-alone",
+    "info": "自建OneDrive游戏盘",
+    "title": "游戏",
+    "page": "https://ss.wlzs.cf/acg.html"
+  },
+  {
     "url": "https://www.zodgame.fun/",
     "name": "ZodGame",
     "info": "墙了104.25.182.10",
@@ -1967,8 +1974,15 @@
     "page": "https://ss.wlzs.cf/book.html"
   },
   {
-    "url": "http://www.wanchengwenku.com/",
-    "name": "凌风云文库",
+    "url": "https://www.owllook.net/",
+    "name": "owllook",
+    "info": "暂无评价",
+    "title": "小说/电子书/pdf",
+    "page": "https://ss.wlzs.cf/book.html"
+  },
+  {
+    "url": "https://www.ebookcn.com",
+    "name": "一博书库",
     "info": "暂无评价",
     "title": "小说/电子书/pdf",
     "page": "https://ss.wlzs.cf/book.html"
@@ -3371,6 +3385,13 @@
     "name": "documentaryaddict",
     "info": "纪录片精品网站",
     "title": "字幕组 / 电视剧",
+    "page": "https://ss.wlzs.cf/film.html"
+  },
+  {
+    "url": "http://movie.ifwlzs.tk",
+    "name": "电影鉴赏",
+    "info": "暂无评价",
+    "title": "电影",
     "page": "https://ss.wlzs.cf/film.html"
   },
   {
