@@ -129,7 +129,7 @@
 				}
 				.seachDiv {
 					float: left;
-					width: 12%;
+					width: 11%;
 				}
 			}
 		</style>
@@ -340,7 +340,7 @@
 						</li>
 						<li>
 							<div style="text-align: center;">
-								<a href="temp.html#t1" style="padding-left: 0;margin: 0 auto;color: #ffc;">最终更新于：2019-11-07</a>
+								<a href="temp.html#t1" style="padding-left: 0;margin: 0 auto;color: #ffc;">最终更新于：2019-11-08</a>
 							</div>
 						</li>
 					</ul>
@@ -363,13 +363,13 @@
 									}
 									if(formname.myselect.value == "1") {
 										$("#q").attr("name", "q");
-										url = "https://cn.bing.com/search?q=";
+										url = "https://quark.sm.cn/s?q=";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
 									if(formname.myselect.value == "2") {
 										$("#q").attr("name", "q");
-										url = "https://quark.sm.cn/s?q=";
+										url = "https://magi.com/search??q=";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
@@ -386,18 +386,24 @@
 										formname.method = "get";
 									}
 									if(formname.myselect.value == "5") {
+										$("#q").attr("name", "q");
+										url = "https://cn.bing.com/search?q=";
+										document.search_form1.value = "q";
+										formname.method = "get";
+									}
+									if(formname.myselect.value == "6") {
 										$("#q").attr("name", "text");
 										url = "https://yandex.com/search/?q";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
-									if(formname.myselect.value == "6") {
+									if(formname.myselect.value == "7") {
 										$("#q").attr("name", "q");
 										url = "https://www.google.com.hk/search?q";
 										document.search_form1.value = "q";
 										formname.method = "get";
 									}
-									if(formname.myselect.value == "7") {
+									if(formname.myselect.value == "8") {
 										$("#q").attr("name", "text");
 										url = "https://translate.google.cn/#view=home&op=translate&sl=en&tl=zh-CN&q";
 										document.search_form1.value = "q";
@@ -421,11 +427,11 @@
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=1;" type="radio" value="1">
-															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=2;" type="radio" value="2">
-															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Magi</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=3;" type="radio" value="3">
@@ -437,14 +443,18 @@
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
-															<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
-															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+															<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
 														</div>
 														<div class="seachDiv">
 															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=7;" type="radio" value="7">
+															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+														</div>
+														<div class="seachDiv">
+															<input name="myselect" onclick="javascript:this.form.myselectvalue.value=8;" type="radio" value="8">
 															<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
 														</div>
 														<table align="center" width="100%">
