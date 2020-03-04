@@ -9,7 +9,8 @@ Author: Samuel Dalusung
 
 html,
 body {
-	background: url(../img/light-veneer.png)repeat;
+	background: url("https://cdn.jsdelivr.net/gh/ifwlzs/ss/img/light-veneer.png")repeat;
+	cursor:url("https://cdn.jsdelivr.net/gh/ifwlzs/ss/img/1.cur"),auto;
 }
 
 h1,
