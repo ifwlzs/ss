@@ -498,6 +498,10 @@
 												"<th>网站简介及所在页面</th></tr>";
 											$jsontip.empty();
 											$.each(data, function(infoIndex, info) {
+												if(info["name"]==null)info["name"]="";
+												if(info["url"]==null)info["url"]="";
+												if(info["title"]==null)info["title"]="";
+												if(info["info"]==null)info["info"]="";
 												if(info["name"].toString().match(".?" + key + ".?") ||
 													info["url"].toString().match(".?" + key + ".?") ||
 													info["title"].toString().match(".?" + key + ".?")||
