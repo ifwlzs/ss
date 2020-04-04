@@ -12,7 +12,14 @@ body {
 	background: url("https://cdn.jsdelivr.net/gh/ifwlzs/ss/img/light-veneer.png")repeat;
 	cursor:url("https://cdn.jsdelivr.net/gh/ifwlzs/ss/img/1.cur"),auto;
 }
-
+html {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(grayscale=1); /* IE6 ~ 9 */
+}
 h1,
 h2,
 h3 {
