@@ -6,7 +6,7 @@ def get_file_list(folder_dir: str):
     f_list = []
     for d in dir_list:
         sub_dir = os.path.join(folder_dir, d)
-        if os.path.isfile(sub_dir) and sub_dir.endswith('.json'):
+        if os.path.isfile(sub_dir):
             f_list.append(d)
     return f_list
 
